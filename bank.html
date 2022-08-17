@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NirobPakhi's Bank</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header Section HTML Start -->
+
+    <header>
+      <div class="text-center mt-10">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl text-black text-center font-semibold"
+        >
+          This is <span class="text-indigo-600">NirobPakhi's Bank</span> Page
+        </h1>
+        <p class="text-2xl md:text-3xl font-medium">Let's get some money!!</p>
+      </div>
+    </header>
+
+    <!-- Header Section HTML End -->
+
+    <!-- Main section HTML Start -->
+
+    <main>
+      <div
+        class="w-full px-5 md:w-4/6 mx-auto md:grid md:grid-cols-3 gap-5 text-center mt-20"
+      >
+        <div class="bg-indigo-400 py-10 rounded-lg shadow-md mb-5 md:mb-0">
+          <h4 class="text-3xl text-white font-medium">Deposit</h4>
+          <h3 class="text-2xl text-white font-medium">
+            $<span id="deposit">00</span>
+          </h3>
+        </div>
+        <div class="bg-orange-400 py-10 rounded-lg shadow-md mb-5 md:mb-0">
+          <h4 class="text-3xl text-white font-medium">Withdraw</h4>
+          <h3 class="text-2xl text-white font-medium">
+            $<span id="withdraw">00</span>
+          </h3>
+        </div>
+        <div class="bg-green-400 py-10 rounded-lg shadow-md mb-5 md:mb-0">
+          <h4 class="text-3xl text-white font-medium">Balance</h4>
+          <h3 class="text-2xl text-white font-medium">
+            $<span id="balance">500</span>
+          </h3>
+        </div>
+      </div>
+      <div
+        class="w-full px-5 md:w-4/6 mx-auto md:grid md:grid-cols-2 gap-5 mt-10"
+      >
+        <div class="bg-purple-400 py-10 px-5 rounded-lg shadow-md mb-5 md:mb-0">
+          <h2 class="text-2xl text-white font-medium mb-5">Diposit Here</h2>
+          <input
+            id="deposit-field"
+            class="w-full py-2 px-5 mb-4 ring-2 ring-purple-300 focus:outline-2 focus:outline-purple-600 rounded-lg"
+            type="text"
+            placeholder="$ Enter amount that you want to Diposit"
+          />
+          <button
+            id="deposit-btn"
+            class="bg-purple-500 text-white text-lg font-medium py-2 px-6 rounded-lg shadow-md mt-2 hover:bg-purple-600"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-fuchsia-400 py-10 px-5 rounded-lg shadow-md">
+          <h2 class="text-2xl text-white font-medium mb-5">Widtdraw Here</h2>
+          <input
+            id="withdraw-field"
+            type="text"
+            class="w-full py-2 px-5 mb-4 ring-2 ring-violet-300 focus:outline-2 focus:outline-violet-600 rounded-lg"
+            placeholder="$ Enter amount that you want to Widtdraw"
+          />
+          <button
+            id="withdraw-btn"
+            class="bg-fuchsia-500 text-white text-lg font-medium py-2 px-6 rounded-lg shadow-md mt-2 hover:bg-fuchsia-600"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Main section HTML End -->
+
+    <!-- JavaScript -->
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+  </body>
+</html>

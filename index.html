@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NirobPakhi's Bank - Login</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div id="bank-login">
+        <div
+          class="w-full md:w-3/5 mx-auto bg-slate-50 p-5 md:p-10 mt-24 rounded-lg shadow-lg"
+        >
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl text-black text-center font-semibold"
+          >
+            Welcome to <span class="text-indigo-600">NirobPakhi's Bank</span>
+          </h1>
+          <div class="w-full md:w-1/2 mx-auto pt-10">
+            <input
+              id="email-field"
+              class="w-full py-2 px-5 mb-4 ring-2 ring-indigo-300 focus:outline-2 focus:outline-indigo-600 rounded-lg"
+              type="text"
+              placeholder="nirobpakhi@bank.com"
+              required
+            />
+            <input
+              id="password-field"
+              class="w-full py-2 px-5 mb-4 ring-2 ring-indigo-300 focus:outline-2 focus:outline-indigo-600 rounded-lg"
+              type="password"
+              placeholder="********"
+              required
+            />
+            <button
+              id="login-btn"
+              class="bg-indigo-600 hover:bg-indigo-400 text-white font-medium py-3 px-10 rounded-lg"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
