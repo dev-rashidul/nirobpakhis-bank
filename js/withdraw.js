@@ -26,6 +26,16 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
         return;
     }
 
+    if (newWithdrawAmount < 100){
+        alert(`Gorib $100 er niche withdraw korte parba na tmi $${newWithdrawAmount} withdraw korte chaitaco.`)
+        return;
+    }
+
+    if (previousBalanceAmount <= 500){
+        alert(`Account a $500 thakte hobe $500 er niche thakle withdraw korte parben na apanr ace $${previousBalanceAmount}.`)
+        return;
+    }
+
     // Get Withdraw Total
     const withdrawTotal = document.getElementById("withdraw");
     const previousWithdrawString = withdrawTotal.innerText;
