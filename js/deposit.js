@@ -16,6 +16,11 @@ document.getElementById("deposit-btn").addEventListener("click", function(){
         return;
     }
 
+    if (newDepositAmount < 1000){
+        alert(`Apni borolok apnar $1000 er beshi Deposit korte hobe kintu apni deposit korcen $${newDepositAmount}`)
+        return;
+    }
+
     // Get Deposit Total
     const depositTotal = document.getElementById("deposit");
     const previousDepositString = depositTotal.innerText;

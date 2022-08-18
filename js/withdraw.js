@@ -22,7 +22,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
 
     // Warnig for Withdraw Amount
     if (newWithdrawAmount > previousBalanceAmount){
-        alert(`Gadha tor ato tk nai tui gorib, tor tk ace ${previousBalanceAmount}tk`);
+        alert(`Gadha tor ato tk nai tui gorib, tor tk ace $${previousBalanceAmount}`);
         return;
     }
 
